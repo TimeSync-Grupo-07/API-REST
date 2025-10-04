@@ -1,4 +1,4 @@
-package com.timesync.repositoryModel
+package com.timesync.repository
 
 import com.timesync.model.EstadoDados
 import org.springframework.data.jpa.repository.JpaRepository

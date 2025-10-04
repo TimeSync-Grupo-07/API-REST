@@ -1,13 +1,13 @@
 package com.timesync.service
 
 import com.timesync.model.EstadoDados
-import com.timesync.repositoryModel.EstadoDadosRepository
+import com.timesync.repository.EstadoDadosRepository
 import org.springframework.stereotype.Service
 
 @Service
 class EstadoDadosService(
-    private val repository: EstadoDadosRepository
+    private val estadoDadosrepository: EstadoDadosRepository
 ) {
 
-    fun listarTodos(): List<EstadoDados> = repository.findAll()
+    fun listarTodos(): List<EstadoDados> = estadoDadosrepository.findAll()
 }

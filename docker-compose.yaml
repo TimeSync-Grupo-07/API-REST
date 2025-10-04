@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  timesync-app:
+    build: .
+    ports:
+      - "${SERVER_PORT}:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}
+      - SPRING_DATASOURCE_URL=jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=${DB_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}
+      - SPRING_APPLICATION_NAME=${APP_NAME}
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=${JPA_DDL_AUTO}
+      - SPRING_JPA_SHOW_SQL=${JPA_SHOW_SQL}
+      - SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL=${JPA_FORMAT_SQL}
+      - SERVER_PORT=8080
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped

@@ -1,11 +1,11 @@
-package timesync.API_REST
+package com.timesync
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ApiRestApplication
+class TimesyncApplication
 
 fun main(args: Array<String>) {
-	runApplication<ApiRestApplication>(*args)
+    runApplication<TimesyncApplication>(*args)
 }

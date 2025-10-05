@@ -3,8 +3,10 @@ package com.timesync.model
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Id
+import jakarta.persistence.JoinColumn
 import jakarta.persistence.ManyToOne
 import jakarta.persistence.Table
+import java.sql.Time
 import java.sql.Timestamp
 import java.util.UUID
 
@@ -19,12 +21,13 @@ class Projetos {
     val nomeProjeto: String = ""
 
     @Column
-    val horasEstimadasProjeto: Timestamp? = null
+    val horasEstimadasProjeto: String = ""
 
     @Column
-    val horasApontadasProjeto: Timestamp? = null
+    val horasApontadasProjeto: String = ""
 
     @field:ManyToOne
-    val idEstadoDado: UUID? = null
+    @JoinColumn(name = "id_estado_dado")
+    val EstadoDados: EstadoDados? = null
 
 }

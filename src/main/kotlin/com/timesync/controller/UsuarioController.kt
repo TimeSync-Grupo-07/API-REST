@@ -1,18 +1,18 @@
 package com.timesync.controller
 
-import com.timesync.model.Projetos
-import com.timesync.service.ProjetosService
+import com.timesync.model.Usuarios
+import com.timesync.service.UsuariosService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/Projetos")
-class ProjetosController(
-    private val projetosService: ProjetosService
+@RequestMapping("/Usuarios")
+class UsuarioController(
+    private val usuariosService: UsuariosService
 ) {
 
     @GetMapping
-    fun listarTodos(): List<Projetos> = projetosService.listarTodos()
+    fun listarTodos(): List<Usuarios> = usuariosService.listarTodos()
 
 }

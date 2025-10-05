@@ -5,7 +5,10 @@ import java.util.UUID
 
 @Entity
 @Table(name = "estado_Dados")
-class EstadoDados {
+class EstadoDados(
+    idEstadoDado: UUID?,
+    nomeEstadoDado: String
+) {
 
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     val idEstadoDado: UUID? = null

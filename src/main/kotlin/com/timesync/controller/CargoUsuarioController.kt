@@ -5,7 +5,7 @@ import com.timesync.service.CargoUsuarioService
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping
+@RequestMapping("/CargoUsuario")
 class CargoUsuarioController(
     private val cargoUsuarioService: CargoUsuarioService
 ) {

@@ -1,7 +1,7 @@
 package com.timesync.service
 
 import com.timesync.model.EstadoDados
-import com.timesync.repositoryModel.EstadoDadosRepository
+import com.timesync.repository.EstadoDadosRepository
 import org.springframework.stereotype.Service
 
 @Service

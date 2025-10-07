@@ -11,13 +11,13 @@ class AssocUsuarioProjetos {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     val idAssocUsuariosProjetos: UUID? = null
 
-//    @ManyToOne
-//    @JoinColumn(name = "usuarios_matricula")
-//    val usuario: Usuarios? = null
+    @ManyToOne
+    @JoinColumn(name = "usuarios_matricula")
+    val usuario: Usuarios? = null
 
-//    @ManyToOne
-//    @JoinColumn(name = "id_projeto")
-//    val projeto: Projeto? = null
+    @ManyToOne
+    @JoinColumn(name = "id_projeto")
+    val projeto: Projetos? = null
 
     @Column
     val dataCriacaoAssociacao: Date? = null

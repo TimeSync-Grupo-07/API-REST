@@ -19,27 +19,27 @@ class Apontamentos {
     val ocorrenciaApontamento: String = ""
 
     @Column
-    val justificativa: String = ""
+    val justificativaApontamento: String = ""
 
-//    @ManyToOne
-//    @JoinColumn(name = "id_projeto")
-//    val projeto: Projeto? = null
-
-    @Column
-    val horaInicio: Time? = null
+    @ManyToOne
+    @JoinColumn(name = "id_projeto")
+    val projeto: Projetos? = null
 
     @Column
-    val horaFim: Time? = null
+    val horaInicioApontamento: Time? = null
 
     @Column
-    val horasTotais: Int? = null
+    val horaFimApontamento: Time? = null
 
     @Column
-    val motivo: String = ""
+    val horasTotaisApontamento: Time? = null
 
-//    @field:ManyToOne
-//    @JoinColumn(name = "usuarios_matricula")
-//    val usuario: Usuario? = null
+    @Column
+    val motivoApontamento: String = ""
+
+    @field:ManyToOne
+    @JoinColumn(name = "usuarios_matricula")
+    val usuario: Usuarios? = null
 
     @ManyToOne
     @JoinColumn(name = "id_estado_dado")

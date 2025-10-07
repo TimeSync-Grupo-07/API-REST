@@ -16,9 +16,9 @@ class AssocCargoEquipe {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     val idAssocCargoEquipe: UUID? = null
 
-//    @ManyToOne
-//    @JoinColumn(name = "usuarios_matricula")
-//    val usuario: Usuarios? = null
+    @ManyToOne
+    @JoinColumn(name = "usuarios_matricula")
+    val usuario: Usuarios? = null
 
     @ManyToOne
     @JoinColumn(name = "equipe_id_equipe")

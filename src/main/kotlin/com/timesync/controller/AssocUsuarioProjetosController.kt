@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping(name = "/AssocUsuarioProjetos")
+@RequestMapping("/AssocUsuarioProjetos")
 class AssocUsuarioProjetosController (
     private val assocUsuarioProjetosService: AssocUsuarioProjetosService
 ) {

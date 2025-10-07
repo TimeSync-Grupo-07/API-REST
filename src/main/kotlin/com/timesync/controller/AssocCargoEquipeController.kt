@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping(name = "/AssocCargoEquipe")
+@RequestMapping("/AssocCargoEquipe")
 class AssocCargoEquipeController (
     private val assocCargoEquipeService: AssocCargoEquipeService
 ) {

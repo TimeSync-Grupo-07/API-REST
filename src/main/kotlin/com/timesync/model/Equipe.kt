@@ -17,8 +17,8 @@ class Equipe {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     val idEquipe: UUID? = null
 
-//    @field:ManyToOne
-//    @JoinColumn(name = "usuarios_matricula")
-//    val gestor: Usuarios? = null
+    @field:ManyToOne
+    @JoinColumn(name = "usuarios_matricula")
+    val gestor: Usuarios? = null
 
 }

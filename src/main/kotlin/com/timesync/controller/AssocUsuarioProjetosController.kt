@@ -1,0 +1,16 @@
+package com.timesync.controller
+
+import com.timesync.model.AssocUsuarioProjetos
+import com.timesync.service.AssocUsuarioProjetosService
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
+
+@RestController
+@RequestMapping(name = "/AssocUsuarioProjetos")
+class AssocUsuarioProjetosController (
+    private val assocUsuarioProjetosService: AssocUsuarioProjetosService
+) {
+
+    fun listarTodos(): List<AssocUsuarioProjetos> = assocUsuarioProjetosService.listarTodos()
+
+}

@@ -7,42 +7,44 @@ import java.util.UUID
 
 @Entity
 @Table(name = "apontamentos")
-class Apontamentos {
+data class Apontamentos (
 
-    @Id @GeneratedValue(strategy = GenerationType.UUID)
-    val idApontamento: UUID? = null
-
-    @Column
-    val dataApontamento: Date? = null
-
-    @Column
-    val ocorrenciaApontamento: String = ""
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "BINARY(16)")
+    val idApontamento: UUID,
 
     @Column
-    val justificativaApontamento: String = ""
+    val dataApontamento: Date,
+
+    @Column
+    val ocorrenciaApontamento: String,
+
+    @Column
+    val justificativaApontamento: String,
 
     @ManyToOne
     @JoinColumn(name = "id_projeto")
-    val projeto: Projetos? = null
+    val projeto: Projetos,
 
     @Column
-    val horaInicioApontamento: Time? = null
+    val horaInicioApontamento: Time,
 
     @Column
-    val horaFimApontamento: Time? = null
+    val horaFimApontamento: Time,
 
     @Column
-    val horasTotaisApontamento: Time? = null
+    val horasTotaisApontamento: Time,
 
     @Column
-    val motivoApontamento: String = ""
+    val motivoApontamento: String,
 
     @field:ManyToOne
     @JoinColumn(name = "usuarios_matricula")
-    val usuario: Usuarios? = null
+    val usuario: Usuarios,
 
     @ManyToOne
     @JoinColumn(name = "id_estado_dado")
-    val estadoDados: EstadoDados? = null
+    val estadoDados: EstadoDados,
 
-}
+)

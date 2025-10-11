@@ -12,22 +12,21 @@ import java.util.UUID
 
 @Entity
 @Table(name = "projetos")
-class Projetos {
+data class Projetos (
 
     @Id @Column(length = 6)
-    val idProjeto: String = ""
+    val idProjeto: String,
 
     @Column
-    val nomeProjeto: String = ""
+    val nomeProjeto: String,
 
     @Column
-    val horasEstimadasProjeto: String = ""
+    val horasEstimadasProjeto: String,
 
     @Column
-    val horasApontadasProjeto: String = ""
+    val horasApontadasProjeto: String,
 
     @field:ManyToOne
     @JoinColumn(name = "id_estado_dado")
-    val EstadoDados: EstadoDados? = null
-
-}
+    val EstadoDados: EstadoDados
+)

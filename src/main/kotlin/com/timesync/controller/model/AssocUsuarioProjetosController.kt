@@ -1,7 +1,7 @@
-package com.timesync.controller
+package com.timesync.controller.model
 
 import com.timesync.model.AssocUsuarioProjetos
-import com.timesync.service.AssocUsuarioProjetosService
+import com.timesync.service.model.AssocUsuarioProjetosService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController

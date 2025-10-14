@@ -1,8 +1,8 @@
-package com.timesync.controller
+package com.timesync.controller.model
 
 import com.timesync.DTO.ProjetosInfoDTO
 import com.timesync.model.Projetos
-import com.timesync.service.ProjetosService
+import com.timesync.service.model.ProjetosService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController

@@ -1,8 +1,8 @@
-package com.timesync.controller
+package com.timesync.controller.model
 
 import com.timesync.DTO.CategoriaValorHoraDTO
 import com.timesync.model.AssocCargoEquipe
-import com.timesync.service.AssocCargoEquipeService
+import com.timesync.service.model.AssocCargoEquipeService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping

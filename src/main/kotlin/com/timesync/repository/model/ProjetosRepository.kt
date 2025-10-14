@@ -1,4 +1,4 @@
-package com.timesync.repository
+package com.timesync.repository.model
 
 import com.timesync.DTO.ProjetosInfoDTO
 import com.timesync.model.Projetos

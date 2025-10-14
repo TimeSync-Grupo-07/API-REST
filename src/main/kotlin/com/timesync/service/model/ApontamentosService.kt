@@ -1,7 +1,7 @@
-package com.timesync.service
+package com.timesync.service.model
 
 import com.timesync.model.Apontamentos
-import com.timesync.repository.ApontamentosRepository
+import com.timesync.repository.model.ApontamentosRepository
 import org.springframework.stereotype.Service
 
 @Service

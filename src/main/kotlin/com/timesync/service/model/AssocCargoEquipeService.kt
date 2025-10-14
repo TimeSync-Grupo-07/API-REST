@@ -1,8 +1,8 @@
-package com.timesync.service
+package com.timesync.service.model
 
 import com.timesync.DTO.CategoriaValorHoraDTO
 import com.timesync.model.AssocCargoEquipe
-import com.timesync.repository.AssocCargoEquipeRepository
+import com.timesync.repository.model.AssocCargoEquipeRepository
 import org.springframework.stereotype.Service
 
 @Service

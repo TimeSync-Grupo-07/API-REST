@@ -1,4 +1,4 @@
-package com.timesync.repository
+package com.timesync.repository.model
 
 import com.timesync.model.Apontamentos
 import org.springframework.data.jpa.repository.JpaRepository

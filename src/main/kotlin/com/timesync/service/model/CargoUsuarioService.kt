@@ -1,7 +1,7 @@
-package com.timesync.service
+package com.timesync.service.model
 
 import com.timesync.model.CargoUsuario
-import com.timesync.repository.CargoUsuarioRepository
+import com.timesync.repository.model.CargoUsuarioRepository
 import org.springframework.stereotype.Service
 
 @Service

@@ -1,4 +1,4 @@
-package com.timesync.views
+package com.timesync.views.Vw
 
 import jakarta.persistence.*
 import org.hibernate.annotations.Immutable

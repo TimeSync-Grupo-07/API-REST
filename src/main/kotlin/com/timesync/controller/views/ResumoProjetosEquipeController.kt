@@ -1,7 +1,7 @@
 package com.timesync.controller.views
 
 import com.timesync.service.views.ResumoProjetosEquipeService
-import com.timesync.views.VwResumoProjetosEquipe
+import com.timesync.views.Vw.VwResumoProjetosEquipe
 import org.springframework.web.bind.annotation.*
 
 @RestController

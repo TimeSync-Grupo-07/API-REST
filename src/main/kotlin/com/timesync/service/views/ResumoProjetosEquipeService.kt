@@ -1,7 +1,7 @@
 package com.timesync.service.views
 
 import com.timesync.repository.views.ResumoProjetosEquipeRepository
-import com.timesync.views.VwResumoProjetosEquipe
+import com.timesync.views.Vw.VwResumoProjetosEquipe
 import org.springframework.stereotype.Service
 
 @Service

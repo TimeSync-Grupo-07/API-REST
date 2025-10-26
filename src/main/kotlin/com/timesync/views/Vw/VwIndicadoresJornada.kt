@@ -14,35 +14,35 @@ data class VwIndicadoresJornada (
 
     @Id
     @Column
-    val idProjeto: String,
+    val idProjeto: String?,
 
     @Column
-    val nomeProjeto: String,
+    val nomeProjeto: String?,
 
     @Column
-    val matricula: Int,
+    val matricula: Int?,
 
     @Column
-    val nomeColaborador: String,
+    val nomeColaborador: String?,
 
     @Column
-    val horasPlanejadas: Int,
+    val horasPlanejadas: Int?,
 
     @Column
-    val horasApontadas: Int,
+    val horasApontadas: Int?,
 
     @Column
-    val horasExtras: Int,
+    val horasExtras: Int?,
 
     @Column
-    val horasRetroativas: Int,
+    val horasRetroativas: Int?,
 
     @Column
-    val indiceCumprimento: Int,
+    val indiceCumprimento: Int?,
 
     @Column
-    val indiceExcedente: Int,
+    val indiceExcedente: Int?,
 
     @Column
-    val taxaErroApontamento: BigDecimal
+    val taxaErroApontamento: BigDecimal?
 )

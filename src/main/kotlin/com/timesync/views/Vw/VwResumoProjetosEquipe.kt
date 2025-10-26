@@ -10,10 +10,10 @@ data class VwResumoProjetosEquipe(
 
     @Id
     @Column
-    val idProjeto: String,
+    val idProjeto: String?,
 
     @Column
-    val nomeProjeto: String,
+    val nomeProjeto: String?,
 
     @Column
     val custoEstimadoLaboral: Double?,
@@ -22,9 +22,9 @@ data class VwResumoProjetosEquipe(
     val horasPlanejadas: Int?,
 
     @Column
-    val dataEntrega: String,
+    val dataEntrega: String?,
 
     @Column
-    val dataInicio: String
+    val dataInicio: String?
 
 )

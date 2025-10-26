@@ -18,6 +18,6 @@ class HorasRetroativasController(
         horasRetroativasService.listarTodas()
 
     @GetMapping("/{idProjeto}")
-    fun listarPorProjeto(@PathVariable idProjeto: String): List<VwHorasRetroativas> =
+    fun listarPorProjeto(@PathVariable idProjeto: String): VwHorasRetroativas? =
         horasRetroativasService.listarPorProjeto(idProjeto)
 }

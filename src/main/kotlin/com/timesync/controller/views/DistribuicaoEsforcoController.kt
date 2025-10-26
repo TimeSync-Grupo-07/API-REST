@@ -17,4 +17,7 @@ class DistribuicaoEsforcoController (
 
     @GetMapping("/{idProjeto}")
     fun listarPorProjeto(@PathVariable idProjeto: String): List<VwDistribuicaoEsforco> =distribuicaoEsforcoService.listarPorProjeto(idProjeto)
+
+    @GetMapping("/Unicos")
+    fun ListarAgrupados(): List<VwDistribuicaoEsforco> = distribuicaoEsforcoService.findAllDistinct()
 }

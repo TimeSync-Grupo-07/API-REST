@@ -7,9 +7,10 @@ import jakarta.persistence.Table
 import org.hibernate.annotations.Immutable
 
 @Entity
-@Table(name="vw_custo_real_laboral")
+@Table(name="vw_horas_apontadas")
 @Immutable
-data class VwCustoRealLaboral (
+data class VwHorasApontadas (
+
     @Id
     @Column
     val idProjeto: String?,
@@ -18,6 +19,6 @@ data class VwCustoRealLaboral (
     val nomeProjeto: String?,
 
     @Column
-    val custoRealLaboral: Double?,
-) {
-}
+    val horasApontadas: Int?
+
+)

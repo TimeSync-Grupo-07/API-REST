@@ -12,12 +12,12 @@ import org.hibernate.annotations.Immutable
 data class VwCustoEstimadoLaboral (
     @Id
     @Column
-    val idProjeto: String,
+    val idProjeto: String?,
 
     @Column
-    val nomeProjeto: String,
+    val nomeProjeto: String?,
 
     @Column
-    val custoEstimadoLaboral: Double,
+    val custoEstimadoLaboral: Double?,
 ) {
 }

@@ -9,6 +9,5 @@ import org.springframework.stereotype.Repository
 @Repository
 interface HorasRetroativasRepository : JpaRepository<VwHorasRetroativas, String> {
 
-    @Query("SELECT h FROM VwHorasRetroativas h WHERE h.idProjeto = :idProjeto")
-    fun findByProjetoId(@Param("idProjeto") idProjeto: String): List<VwHorasRetroativas>
+    fun findByIdProjeto(@Param("idProjeto") idProjeto: String): VwHorasRetroativas?
 }

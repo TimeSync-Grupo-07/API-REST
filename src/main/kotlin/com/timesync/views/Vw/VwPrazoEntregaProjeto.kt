@@ -13,13 +13,13 @@ import java.util.*
 data class VwPrazoEntregaProjeto (
     @Id
     @Column
-    val idProjeto: String,
+    val idProjeto: String?,
 
     @Column
-    val nomeProjeto: String,
+    val nomeProjeto: String?,
 
     @Column
-    val prazoEntrega: Date,
+    val prazoEntrega: Date?,
 ) {
 
 }

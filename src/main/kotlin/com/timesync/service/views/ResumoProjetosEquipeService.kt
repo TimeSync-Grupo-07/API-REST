@@ -11,4 +11,6 @@ class ResumoProjetosEquipeService (
 
     fun listarTodos() : List<VwResumoProjetosEquipe> = resumoProjetosEquipeRepository.findAll()
 
+    fun buscarProjeto(idProjeto: String): VwResumoProjetosEquipe? = resumoProjetosEquipeRepository.findByIdProjeto(idProjeto)
+
 }

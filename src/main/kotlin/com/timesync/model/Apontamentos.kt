@@ -34,7 +34,7 @@ data class Apontamentos (
     val horaFimApontamento: Time,
 
     @Column
-    val horasTotaisApontamento: Time,
+    val horasTotaisApontamento: Float,
 
     @Column
     val motivoApontamento: String,

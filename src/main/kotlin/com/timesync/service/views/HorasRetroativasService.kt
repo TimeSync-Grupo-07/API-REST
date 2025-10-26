@@ -12,6 +12,6 @@ data class HorasRetroativasService(
     fun listarTodas(): List<VwHorasRetroativas> =
         horasRetroativasRepository.findAll()
 
-    fun listarPorProjeto(idProjeto: String): List<VwHorasRetroativas> =
-        horasRetroativasRepository.findByProjetoId(idProjeto)
+    fun listarPorProjeto(idProjeto: String): VwHorasRetroativas? =
+        horasRetroativasRepository.findByIdProjeto(idProjeto)
 }

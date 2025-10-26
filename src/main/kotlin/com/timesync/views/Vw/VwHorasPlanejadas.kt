@@ -12,11 +12,11 @@ import org.hibernate.annotations.Immutable
 data class VwHorasPlanejadas(
     @Id
     @Column
-    val idProjeto: String,
+    val idProjeto: String?,
 
     @Column
-    val nomeProjeto: String,
+    val nomeProjeto: String?,
 
     @Column
-    val horasPlanejadas: Int
+    val horasPlanejadas: Int?
 )

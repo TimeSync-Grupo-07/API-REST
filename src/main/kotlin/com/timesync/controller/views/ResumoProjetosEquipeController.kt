@@ -13,4 +13,7 @@ class ResumoProjetosEquipeController(
     @GetMapping
     fun listarTodos() : List<VwResumoProjetosEquipe> = resumoProjetosEquipeService.listarTodos()
 
+    @GetMapping("/{idProjeto}")
+    fun buscarProjeto(@PathVariable idProjeto: String) : VwResumoProjetosEquipe? = resumoProjetosEquipeService.buscarProjeto(idProjeto)
+
 }

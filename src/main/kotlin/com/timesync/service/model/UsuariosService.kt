@@ -11,10 +11,4 @@ class UsuariosService (
 
     fun listarTodos(): List<Usuarios> = usuariosRepository.findAll()
 
-    fun InsercaoColaborador(){
-
-        usuariosRepository.save<Usuarios>()
-
-    }
-
 }

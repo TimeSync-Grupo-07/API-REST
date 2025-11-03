@@ -5,14 +5,13 @@ import java.util.UUID
 
 @Entity
 @Table(name = "estado_Dados")
-class EstadoDados(
-    idEstadoDado: UUID?,
-    nomeEstadoDado: String
-) {
+data class EstadoDados(
 
-    @Id @GeneratedValue(strategy = GenerationType.UUID)
-    val idEstadoDado: UUID? = null
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "BINARY(16)")
+    val idEstadoDado: UUID,
 
     @Column
-    val nomeEstadoDado: String = ""
-}
+    val nomeEstadoDado: String
+)

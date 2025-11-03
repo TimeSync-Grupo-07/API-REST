@@ -6,32 +6,32 @@ import java.util.UUID
 
 @Entity
 @Table(name = "usuarios")
-class Usuarios {
+data class Usuarios (
 
     @Id
-    val matricula: Int? = null
+    val matricula: Int,
 
     @Column(length = 100)
-    val nomeCompletoUsuario: String = ""
+    val nomeCompletoUsuario: String,
 
     @Column(length = 150)
-    val emailUsuario: String = ""
+    val emailUsuario: String,
 
     @Column(length = 255)
-    val idMicrosoftUsuario: String = ""
+    val idMicrosoftUsuario: String,
 
     @Column
-    val dataCriacaoUsuario: Date? = null
+    val dataCriacaoUsuario: Date,
 
     @Column
-    val dataAtualizacaoUsuario: Date? = null
+    val dataAtualizacaoUsuario: Date,
 
     @field:ManyToOne
     @JoinColumn(name = "id_estado_dado")
-    val EstadoDados: EstadoDados? = null
+    val EstadoDados: EstadoDados,
 
     @field:ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "matricula_superior")
-    val Superior: Usuarios? = null
+    val Superior: com.timesync.model.Usuarios?
 
-}
+)

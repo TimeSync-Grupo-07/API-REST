@@ -12,13 +12,15 @@ import java.util.UUID
 
 @Entity
 @Table(name = "equipe")
-class Equipe {
+data class Equipe (
 
-    @Id @GeneratedValue(strategy = GenerationType.UUID)
-    val idEquipe: UUID? = null
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "BINARY(16)")
+    val idEquipe: UUID,
 
-    @field:ManyToOne
+    @ManyToOne
     @JoinColumn(name = "usuarios_matricula")
-    val gestor: Usuarios? = null
+    val gestor: Usuarios
 
-}
+)

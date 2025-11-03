@@ -6,26 +6,28 @@ import java.util.UUID
 
 @Entity
 @Table(name = "assoc_usuario_projetos")
-class AssocUsuarioProjetos {
+data class AssocUsuarioProjetos (
 
-    @Id @GeneratedValue(strategy = GenerationType.UUID)
-    val idAssocUsuariosProjetos: UUID? = null
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "BINARY(16)")
+    val idAssocUsuariosProjetos: UUID,
 
     @ManyToOne
     @JoinColumn(name = "usuarios_matricula")
-    val usuario: Usuarios? = null
+    val usuario: Usuarios,
 
     @ManyToOne
     @JoinColumn(name = "id_projeto")
-    val projeto: Projetos? = null
+    val projeto: Projetos,
 
     @Column
-    val dataCriacaoAssociacao: Date? = null
+    val dataCriacaoAssociacao: Date,
 
     @Column
-    val horasPlanejadas: Int? = null
+    val horasPlanejadas: Int,
 
     @Column
-    val dataAtualizacaoAssociacao: Date? = null
+    val dataAtualizacaoAssociacao: Date
 
-}
+)

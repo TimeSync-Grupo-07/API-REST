@@ -1,7 +1,7 @@
 package com.timesync.service.views
 
 import com.timesync.repository.views.HorasRetroativasRepository
-import com.timesync.views.Vw.VwHorasRetroativas
+import com.timesync.views.VwHorasRetroativas
 import org.springframework.stereotype.Service
 
 @Service

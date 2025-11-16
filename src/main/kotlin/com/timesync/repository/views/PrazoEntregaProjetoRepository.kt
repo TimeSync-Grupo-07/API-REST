@@ -1,6 +1,6 @@
 package com.timesync.repository.views
 
-import com.timesync.views.Vw.VwPrazoEntregaProjeto
+import com.timesync.views.VwPrazoEntregaProjeto
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 import org.springframework.data.repository.query.Param

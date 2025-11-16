@@ -1,7 +1,7 @@
 package com.timesync.service.views
 
 import com.timesync.repository.views.PrazoEntregaProjetoRepository
-import com.timesync.views.Vw.VwPrazoEntregaProjeto
+import com.timesync.views.VwPrazoEntregaProjeto
 import org.springframework.stereotype.Service
 
 @Service

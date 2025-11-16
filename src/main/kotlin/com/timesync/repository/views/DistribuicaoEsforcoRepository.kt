@@ -1,6 +1,6 @@
 package com.timesync.repository.views
 
-import com.timesync.views.Vw.VwDistribuicaoEsforco
+import com.timesync.views.VwDistribuicaoEsforco
 import org.hibernate.annotations.processing.SQL
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query

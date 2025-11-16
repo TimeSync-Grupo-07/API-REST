@@ -1,25 +1,24 @@
-package com.timesync.views.Vw
+package com.timesync.views
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Id
 import jakarta.persistence.Table
 import org.hibernate.annotations.Immutable
-import java.util.UUID
 
 @Entity
-@Table(name="vw_custos_cargos_equipe")
+@Table(name="vw_horas_extras_totais")
 @Immutable
-data class VwCustosCargosEquipe (
+data class VwHorasExtrasTotais (
 
     @Id
     @Column
-    val idCargoUsuario: UUID?,
+    val idProjeto: String?,
 
     @Column
-    val categoria: String?,
+    val nomeProjeto: String?,
 
     @Column
-    val custoHoraTrabalho: Int?
+        val horasExtrasTotais: Int?
 
 )

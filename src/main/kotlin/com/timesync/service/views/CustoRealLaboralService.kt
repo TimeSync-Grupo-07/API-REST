@@ -1,7 +1,7 @@
 package com.timesync.service.views
 
 import com.timesync.repository.views.CustoRealLaboralRepository
-import com.timesync.views.Vw.VwCustoRealLaboral
+import com.timesync.views.VwCustoRealLaboral
 import org.springframework.stereotype.Service
 
 @Service

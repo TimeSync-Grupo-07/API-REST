@@ -1,7 +1,7 @@
 package com.timesync.controller.views
 
 import com.timesync.service.views.IndicadoresJornadaService
-import com.timesync.views.Vw.VwIndicadoresJornada
+import com.timesync.views.VwIndicadoresJornada
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping

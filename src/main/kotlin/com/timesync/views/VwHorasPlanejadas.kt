@@ -1,4 +1,4 @@
-package com.timesync.views.Vw
+package com.timesync.views
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
@@ -7,9 +7,9 @@ import jakarta.persistence.Table
 import org.hibernate.annotations.Immutable
 
 @Entity
-@Table(name="vw_custo_estimado_laboral")
+@Table(name="vw_horas_planejadas")
 @Immutable
-data class VwCustoEstimadoLaboral (
+data class VwHorasPlanejadas(
     @Id
     @Column
     val idProjeto: String?,
@@ -18,6 +18,5 @@ data class VwCustoEstimadoLaboral (
     val nomeProjeto: String?,
 
     @Column
-    val custoEstimadoLaboral: Double?,
-) {
-}
+    val horasPlanejadas: Int?
+)

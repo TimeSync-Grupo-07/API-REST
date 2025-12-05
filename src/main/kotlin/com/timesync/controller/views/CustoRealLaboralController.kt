@@ -1,7 +1,7 @@
 package com.timesync.controller.views
 
 import com.timesync.service.views.CustoRealLaboralService
-import com.timesync.views.Vw.VwCustoRealLaboral
+import com.timesync.views.VwCustoRealLaboral
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping

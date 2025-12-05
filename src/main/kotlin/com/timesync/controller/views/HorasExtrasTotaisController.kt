@@ -1,7 +1,7 @@
 package com.timesync.controller.views
 
 import com.timesync.service.views.HorasExtrasTotaisService
-import com.timesync.views.Vw.VwHorasExtrasTotais
+import com.timesync.views.VwHorasExtrasTotais
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping

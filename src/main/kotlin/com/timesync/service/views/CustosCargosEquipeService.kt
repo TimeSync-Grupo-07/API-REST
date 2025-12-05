@@ -2,8 +2,8 @@ package com.timesync.service.views
 
 import com.timesync.repository.views.CustosCargosEquipeRepository
 import com.timesync.repository.views.HorasApontadasRepository
-import com.timesync.views.Vw.VwCustosCargosEquipe
-import com.timesync.views.Vw.VwHorasApontadas
+import com.timesync.views.VwCustosCargosEquipe
+import com.timesync.views.VwHorasApontadas
 import org.springframework.stereotype.Service
 
 @Service

@@ -1,7 +1,7 @@
 package com.timesync.service.views
 
 import com.timesync.repository.views.IndicadoresJornadaRepository
-import com.timesync.views.Vw.VwIndicadoresJornada
+import com.timesync.views.VwIndicadoresJornada
 import org.springframework.stereotype.Service
 
 @Service

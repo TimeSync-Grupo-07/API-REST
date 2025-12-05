@@ -1,7 +1,7 @@
 package com.timesync.service.views
 
 import com.timesync.repository.views.DistribuicaoEsforcoRepository
-import com.timesync.views.Vw.VwDistribuicaoEsforco
+import com.timesync.views.VwDistribuicaoEsforco
 import org.springframework.stereotype.Service
 
 @Service

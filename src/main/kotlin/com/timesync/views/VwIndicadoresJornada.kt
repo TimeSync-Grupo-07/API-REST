@@ -1,4 +1,4 @@
-package com.timesync.views.Vw
+package com.timesync.views
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity

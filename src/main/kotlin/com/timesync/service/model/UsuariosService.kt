@@ -11,4 +11,6 @@ class UsuariosService (
 
     fun listarTodos(): List<Usuarios> = usuariosRepository.findAll()
 
+    fun login(email: String, senha: String): Usuarios = usuariosRepository.findByEmailUsuarioAndSenhaUsuario(email, senha)
+
 }

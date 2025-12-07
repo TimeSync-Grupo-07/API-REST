@@ -17,6 +17,9 @@ data class Usuarios (
     @Column(length = 150)
     val emailUsuario: String,
 
+    @Column(length = 40)
+    val senhaUsuario: String,
+
     @Column(length = 255)
     val idMicrosoftUsuario: String,
 

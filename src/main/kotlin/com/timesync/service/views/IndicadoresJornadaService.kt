@@ -4,6 +4,7 @@ import com.timesync.DTO.IndicadoreColaboradorDTO
 import com.timesync.repository.views.IndicadoresJornadaRepository
 import com.timesync.views.VwIndicadoresJornada
 import org.springframework.stereotype.Service
+import java.math.BigDecimal
 
 @Service
 data class IndicadoresJornadaService (
@@ -20,11 +21,11 @@ data class IndicadoresJornadaService (
 
         val listaDTO = resposta.map { item ->
             IndicadoreColaboradorDTO(
-                projeto = item.nomeProjeto!!,
-                horasPlanejadas = item.horasPlanejadas!!,
-                horasApontadas = item.horasApontadas!!,
-                horasExtras = item.horasExtras!!,
-                taxaErroApontamento = item.taxaErroApontamento!!
+                projeto = item.nomeProjeto ?: "",
+                horasPlanejadas = item.horasPlanejadas ?: 0,
+                horasApontadas = item.horasApontadas ?: 0,
+                horasExtras = item.horasExtras ?: 0,
+                taxaErroApontamento = item.taxaErroApontamento ?: BigDecimal.ZERO
             )
         }
 

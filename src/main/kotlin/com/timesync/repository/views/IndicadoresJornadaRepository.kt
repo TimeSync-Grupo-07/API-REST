@@ -9,4 +9,6 @@ interface IndicadoresJornadaRepository:JpaRepository <VwIndicadoresJornada,Strin
 
     @Query("SELECT i FROM VwIndicadoresJornada i WHERE i.idProjeto = :idProjeto")
     fun findByProjetoId(@Param("idProjeto") idProjeto:String): List<VwIndicadoresJornada>
+
+    fun findByMatricula(matricula: Int): List<VwIndicadoresJornada>
 }

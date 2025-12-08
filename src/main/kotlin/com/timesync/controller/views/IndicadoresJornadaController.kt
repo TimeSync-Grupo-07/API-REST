@@ -1,5 +1,6 @@
 package com.timesync.controller.views
 
+import com.timesync.DTO.IndicadoreColaboradorDTO
 import com.timesync.service.views.IndicadoresJornadaService
 import com.timesync.views.VwIndicadoresJornada
 import org.springframework.web.bind.annotation.GetMapping
@@ -17,4 +18,8 @@ class IndicadoresJornadaController (
 
     @GetMapping("/{idProjeto}")
     fun listarPorProjeto(@PathVariable idProjeto:String): List<VwIndicadoresJornada> = indicadoresJornadaService.listarPorProjeto(idProjeto)
+
+    @GetMapping("/colaborador/{matricula}")
+    fun listarPorColaborador(@PathVariable matricula: Int): List<IndicadoreColaboradorDTO> = indicadoresJornadaService.listarPorColaborador(matricula)
+
 }
